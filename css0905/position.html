@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#fix{position: fixed; top:50px; left: 400px; border: 1px solid #333; 
+background-color: #FF0000; width: 130px; height: 500px}
+#wrap{width: 1040px; height: 1000px; border: 1px solid #333}
+#absolute{position: absolute; top:10px; left: 100px; border: 1px solid #333; 
+/* absolure는 relative에 시작좌표 영향을 받는다. */
+background-color: #0000FF; width: 130px; height: 400px}
+#rel{position: relative; top:100px; left:100x; }
+/* fixed는 relative에 시작좌표 영향을 받지 않는다. */
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="rel">
+<div id="fix">fixed</div>
+<div id="absolute">absolute</div>
+</div>
+</div>
+</body>
+</html>

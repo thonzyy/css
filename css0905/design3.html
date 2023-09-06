@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#wrap{ width: 1000px; height:950px;  margin: 0px auto;}
+#header{ height: 200px; }
+/* 레프트나 라이트의 시작좌표가 브라우저가 아닌 컨테이너가 되도록 릴레이티브를 설정 */
+#container{ height:600px; background-color: #FF0000 ; position: relative}
+/* 레프트나 라이트는 컨테이너의 시작점으로 탑과 레프트를 성정한다. */
+#left{width: 250px; height:130px; background-color: #6D5E9A; position: absolute; top: 100px; left: 70px}
+#right{width: 300px; height:200px; background-color: #489450; position:absolute; top: 350px; left: 600px;}
+#footer{height:150px }
+</style>
+
+</head>
+<body>
+<div id="wrap">
+<div id="header">header (1000x200)</div>
+<div id="container">
+<div id="left">left (700 x 600)</div>
+<div id="right">right (300 x 600)</div>
+</div>
+<div id="footer">footer (1000 x 150)</div>
+</div>
+
+</body>
+</html>
